@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Welcome to Soul's Pretty Good Updater v0.0.2 for Debian based systems."
+echo "Welcome to Soul's Pretty Good Updater v0.0.3 Alpha for Debian based systems."
 echo "This script is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk."
 echo ""
 
@@ -11,6 +11,21 @@ echo ""
 	GREEN=`echo -en "\e[32m"`
 	RED=`echo -en "\e[31m"`
 	NORMAL=`echo -en "\e[0m"`
+
+#INDEV
+#This section warns the user they are using a development version of the application - it can be commented out for stable versions
+read -p "${RED}WARNING:${NORMAL} This is an indev version - code may be unstable or break! Proceed anyways y/N? " ANSWERx
+case "$ANSWERx" in
+	[yY])
+		echo "Proceeding..."
+		echo "Thank you for testing this software! Please report any bugs you find."
+		echo ""
+		;;
+	*)
+		echo "Aborted."
+		exit
+		;;
+esac
 
 #MODULE CHECKS
 if [ "$APTMOD" == "true" ]
