@@ -3,6 +3,12 @@
 
 ### Version history
 
+**0.0.3 Alpha**
+- Added syntax to ask the user to confirm they wish to run an indev version of the software
+- Added "Alpha" to the in app welcome screen
+- Relevant commit(s)
+	- https://github.com/soulstenance/spgu/commit/d4d41989c5410786421e20244af86f65e4e2c9f1
+
 **0.0.2 Alpha**  
 - Imported from proof of concept build for Arch based systems  
 - General code rework and tweaks  
