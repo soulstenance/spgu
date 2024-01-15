@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Welcome to Soul's Pretty Good Updater v0.1.0 Beta for Debian based systems."
-echo "This script is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk."
+echo "This software is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk."
 echo ""
 
 #VARIABLES
