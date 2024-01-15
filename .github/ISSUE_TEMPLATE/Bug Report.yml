@@ -4,7 +4,6 @@ title: "[Bug]: "
 labels: ["bug"]
 projects: []
 assignees:
-	- soulstenance
 body:
 	- type: textarea
 		id: what-happened
