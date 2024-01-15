@@ -3,6 +3,14 @@
 
 ### Version history
 
+**0.1.0 Beta**
+- Fixed issue #8
+- Added autoremove feature
+- Added variable to easily enable/disable warning when using an indev version
+- Various code tweaks and cleanup
+- Relevant commit(s)
+	- https://github.com/soulstenance/spgu/commit/2f905366b5e95cf8ab7b3a3d07d0537454ea2eaf
+
 **0.0.3 Alpha**
 - Added syntax to ask the user to confirm they wish to run an indev version of the software
 - Added "Alpha" to the in app welcome screen
