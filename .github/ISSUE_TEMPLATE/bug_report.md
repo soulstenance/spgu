@@ -7,12 +7,6 @@ assignees: soulstenance
 
 ---
 
-***What version are you using? Also are you using a stable or indev version?***
-Ex: 0.0.1 indev
-
-**Did you try the latest version?**
-Yes or No
-
 **Describe the bug**
 A clear and concise description of what the bug is.
 
