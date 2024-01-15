@@ -7,7 +7,7 @@ assignees: soulstenance
 
 ---
 
-***What version are you using? Also are you using a stable or indev version?***
+**What version are you using? Also are you using a stable or indev version?**
 Ex: 0.0.1 indev
 
 **Did you try the latest version?**
