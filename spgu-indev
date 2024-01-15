@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Welcome to Soul's Pretty Good Updater v0.0.3 Alpha for Debian based systems."
+echo "Welcome to Soul's Pretty Good Updater v0.1.0 Beta for Debian based systems."
 echo "This script is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk."
 echo ""
 
@@ -11,21 +11,28 @@ echo ""
 	GREEN=`echo -en "\e[32m"`
 	RED=`echo -en "\e[31m"`
 	NORMAL=`echo -en "\e[0m"`
+#Stable
+	ISSTABLE="false"
 
 #INDEV
-#This section warns the user they are using a development version of the application - it can be commented out for stable versions
-read -p "${RED}WARNING:${NORMAL} This is an indev version - code may be unstable or break! Proceed anyways y/N? " ANSWERx
-case "$ANSWERx" in
-	[yY])
-		echo "Proceeding..."
-		echo "Thank you for testing this software! Please report any bugs you find."
-		echo ""
-		;;
-	*)
-		echo "Aborted."
-		exit
-		;;
-esac
+#This section warns the user they are using a development version of the application. Use the ISSTABLE variable above to control this.
+if [ "$ISSTABLE" == "true" ]
+then
+	:
+else
+	read -p "${RED}WARNING:${NORMAL} This is a development version - code may be unstable! Proceed anyways y/N? " ANSWERx
+	case "$ANSWERx" in
+		[yY])
+			echo "Proceeding..."
+			echo "Thank you for testing this software! Please report any bugs you find."
+			echo ""
+			;;
+		*)
+			echo "Aborted."
+			exit
+			;;
+	esac
+fi
 
 #MODULE CHECKS
 if [ "$APTMOD" == "true" ]
@@ -47,42 +54,36 @@ echo ""
 #Apt update
 read -p "Would you like to update apt now Y/n? " ANSWER0
 case "$ANSWER0" in
-	[yY])
+	"" | [yY])
 		sudo apt update && sudo apt upgrade -y
+		echo "Checking for unneeded dependencies..."
+		sudo apt autoremove -y
 		echo "Apt update complete!"
 		;;
 	[nN])
-		echo "Thank you for your time! Goodbye!"
+		echo "Skipping this step..."
 		;;
-#	[aA])
-#	    sudo apt update && sudo apt upgrade -y
-#		echo "Apt update complete!"
-#		ANSWER1=ANSWER0
-#		;;
 	*)
-		sudo apt update && sudo apt upgrade -y
-		echo "Apt update complete!"
+		echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
+		exit
 		;;
 esac
 
 #Flatpak update
 read -p "Would you like to update flatpak now Y/n? " ANSWER1
 case "$ANSWER1" in
-	[yY])
+	"" | [yY])
 		echo "Updating flatpak..."
 		flatpak update -y
+		echo "Checking for unneeded dependencies..."
+		flatpak uninstall --unused -y
 		echo "Flatpak update complete!"
 		;;
 	[nN])
 		echo "Thank you for your time! Goodbye!"
 		;;
-#	[aA])
-#	    echo "Updating flatpak..."
-#		flatpak update -y
-#		echo "Flatpak update complete!"
 	*)
-		echo "Updating flatpak..."
-		flatpak update -y
-		echo "Flatpak update complete!"
+		echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
+		exit
 		;;
 esac
