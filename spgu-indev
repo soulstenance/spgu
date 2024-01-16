@@ -29,7 +29,7 @@ else
 			;;
 		*)
 			echo "Aborted."
-			exit
+			exit 0
 			;;
 	esac
 fi
@@ -65,7 +65,7 @@ case "$ANSWER0" in
 		;;
 	*)
 		echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
-		exit
+		exit 2
 		;;
 esac
 
@@ -84,6 +84,6 @@ case "$ANSWER1" in
 		;;
 	*)
 		echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
-		exit
+		exit 2
 		;;
 esac
