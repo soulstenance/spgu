@@ -11,7 +11,7 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 - Application is now marked as stable
 - Going forward a copy of the license will be included with all releases
 - Relevant commit(s)
-	- baeddc5, a31b512
+	- 40b7281, a31b512
 
 **0.1.0 Beta**
 - Fixed issue #8
