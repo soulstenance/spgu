@@ -1,7 +1,17 @@
 # spgu
 ## Soul's Pretty Good Updater for Debian based systems
 
+### License Notice
+This software is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk. A copy of the license should accompany this software so you can always know your rights and responsibilities.
+
 ### Version history
+
+**0.1.1**
+- Added an error code when entering invalid input
+- Application is now marked as stable
+- Going forward a copy of the license will be included with all releases
+- Relevant commit(s)
+	- baeddc5, a31b512
 
 **0.1.0 Beta**
 - Fixed issue #8
