@@ -4,12 +4,12 @@
 The following are a list of questions you may have about this software. Will be updated as needed. Please reference this file before opening an issue or if you have any questions. If you have any questions that are not answered, feel free to open an issue with the title "Question" and I will try to help!
 
 #### What is this program?
-This is a small script I wrote, initially for use on Arch to update all packages from different package manangers seamlessly in one command. Though this version never saw the light of day, I took the concept and adapted it to Debian, when I switched distros.
+This is a small script I wrote, initially for use on Arch to update all packages from different package managers seamlessly in one command. Though this version never saw the light of day, I took the concept and adapted it to Debian, when I switched distros.
 
 #### Is it safe?
 While you should **not** trust any random executable you download off the internet, you don't have to in this case. You can review the source code yourself if you wish.
 
-As an additional measure, all commits, tags, and releases from v0.1.1 and onward will be signed with my official signing key. To check a signature, you can download my public key from keys.openpgp.org by searching for soulstenance.e2pisATslmail.me and verifying my fingerprint '7647635565F349C740B589EEC2D7FEF79A7901B1'
+As an additional measure, all commits, tags, and releases from v0.1.1 and onward will be signed with my official signing key. To check a signature, you can download my public key from keys.openpgp.org by searching for soulstenance.e2pisATslmail.me and verifying my fingerprint '7647635565F349C740B589EEC2D7FEF79A7901B1'.
 
 #### Why did you make it?
 I primarily made it for my own personal use and to learn shell scripting. I made it opensource and public, in the hopes that other curious souls out there may hopefully find some enjoyment and/or usefulness from it. As the name suggests, while this app is *pretty good* at what it does, there are almost certainly better options out there!
