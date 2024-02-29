@@ -1,10 +1,13 @@
-# spgu
-## Soul's Pretty Good Updater for Debian based systems
+## spgu
+### Soul's Pretty Good Updater for Debian based systems
 
-### License Notice
+#### FAQ
+Please reference the FAQ.md file before opening an issue or if you have any questions. If you have any questions that are not answered, feel free to open an issue with the title "Question" and I will try to help!
+
+#### License Notice
 This software is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk. A copy of the license should accompany this software so you can always know your rights and responsibilities.
 
-### Version history
+#### Version history
 
 **0.1.1**
 - Added an error code when entering invalid input
