@@ -9,7 +9,7 @@ This is a small script I wrote, initially for use on Arch to update all packages
 #### Is it safe?
 While you should **not** trust any random executable you download off the internet, you don't have to in this case. You can review the source code yourself if you wish.
 
-As an additional measure, all commits, tags, and releases from v0.1.1 and onward will be signed with my official signing key. To check a signature, you can download my public key from keys.openpgp.org by searching for soulstenance.e2pisATslmail.me and verifying my fingerprint '7647635565F349C740B589EEC2D7FEF79A7901B1'.
+As an additional measure, all commits, tags, and releases from v0.1.1 and onward will be signed with my official signing key. To check a signature, see the instructions on my profile.
 
 #### Why did you make it?
 I primarily made it for my own personal use and to learn shell scripting. I made it opensource and public, in the hopes that other curious souls out there may hopefully find some enjoyment and/or usefulness from it. As the name suggests, while this app is *pretty good* at what it does, there are almost certainly better options out there!
@@ -38,4 +38,4 @@ Absolutely not.
 Absolutely! Simply create a pull request for your code and I will review it. Please be verbose with your coding and leave clear comments in the code. If I don't know what your code does, it will be rejected. You can also submit feature requests and issue reports if you don't want to contribute code yourself!
 
 #### I have other questions.
-You can open an issue on Github with the title "Question" or send an email to soulstenance.e2pisATslmail.me.
+You can open an issue on Github with the title "Question" or send me an email, which is available on my profile to signed in users.
