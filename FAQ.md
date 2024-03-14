@@ -17,7 +17,7 @@ I primarily made it for my own personal use and to learn shell scripting. I made
 #### How is this better than apt or Synaptic?
 Unlike those programs, this script seamlessly, and with minimal user interaction, can run apt update, apt upgrade, and apt autoremove in one simple command. The is one of the major drawbacks I find when using regular apt to run updates.
 
-In addition to this, I have implemented a *modules* feature which can also call other package managers in the same way. Currently Flatpak is enabled in this way by default, but can be disabled/removed if you wish. You can also call other command line package managers should you wish, such as snapd.
+In addition to this, I have implemented a *modules* feature which can also call other package managers in the same way. Currently Flatpak is enabled in this way by default, but can be disabled/removed if you wish. You can also call other command line package managers should you wish, such as nala or snapd.
 
 #### How is this better than graphical stores/updaters like Discover Store, mintUpdate, etc?
 It's not.

@@ -11,6 +11,8 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 
 **1.0** - TBA  
 - Added more colors and polish
+- Various other tweaks and improvements
+- Fixed issue #3
 
 **0.1.1** - Feb 28, 2024  
 - Added an error code when entering invalid input

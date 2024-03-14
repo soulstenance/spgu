@@ -5,6 +5,7 @@ echo ""
 
 #VARIABLES
 #Modules
+#Set these to "false" to disable the relevant module
 	APTMOD="true"
 	FLATMOD="true"
 #Colors
@@ -55,41 +56,52 @@ echo ""
 
 #PROMPT
 #Apt update
-read -p "${BLUE_BOLD}Would you like to update apt now Y/n? ${NORMAL}" ANSWER0
-case "$ANSWER0" in
-	"" | [yY])
-		echo "${BLUE_BOLD}Updating apt packages...${NORMAL}"
-		sudo apt update && sudo apt upgrade -y
-		echo "${BLUE_BOLD}Checking for unneeded dependencies...${NORMAL}"
-		sudo apt autoremove -y
-		echo "${GREEN_BOLD}Apt update complete!${NORMAL}"
-		;;
-	[nN])
-		echo "Skipping this step..."
-		;;
-	*)
-		echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
-		exit 2
-		;;
-esac
+if [ "$APTMOD" == "true" ]
+then
+	read -p "${BLUE_BOLD}Would you like to update apt now Y/n? ${NORMAL}" ANSWER0
+	case "$ANSWER0" in
+		"" | [yY])
+			echo "${BLUE_BOLD}Updating apt packages...${NORMAL}"
+			sudo apt update && sudo apt upgrade -y
+			echo "${BLUE_BOLD}Checking for unneeded dependencies...${NORMAL}"
+			sudo apt autoremove -y
+			echo "${GREEN_BOLD}Apt update complete!${NORMAL}"
+			;;
+		[nN])
+			echo "Skipping this step..."
+			;;
+		*)
+			echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
+			exit 2
+			;;
+	esac
+else
+	:
+fi
 
 #Flatpak update
-read -p "${BLUE_BOLD}Would you like to update flatpak now Y/n? ${NORMAL}" ANSWER1
-case "$ANSWER1" in
-	"" | [yY])
-		echo "${BLUE_BOLD}Updating flatpak packages...${NORMAL}"
-		flatpak update -y
-		echo "${BLUE_BOLD}Checking for unneeded dependencies...${NORMAL}"
-		flatpak uninstall --unused -y
-		echo "${GREEN_BOLD}Flatpak update complete!${NORMAL}"
-		;;
-	[nN])
-		echo "Skipping this step..."
-		;;
-	*)
-		echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
-		exit 2
-		;;
-esac
+if [ "$FLATMOD" == "true" ]
+then
+	read -p "${BLUE_BOLD}Would you like to update flatpak now Y/n? ${NORMAL}" ANSWER1
+	case "$ANSWER1" in
+		"" | [yY])
+			echo "${BLUE_BOLD}Updating flatpak packages...${NORMAL}"
+			flatpak update -y
+			echo "${BLUE_BOLD}Checking for unneeded dependencies...${NORMAL}"
+			flatpak uninstall --unused -y
+			echo "${GREEN_BOLD}Flatpak update complete!${NORMAL}"
+			;;
+		[nN])
+			echo "Skipping this step..."
+			;;
+		*)
+			echo "${RED}ERROR:${NORMAL} Invalid response - Aborted."
+			exit 2
+			;;
+	esac
+else
+	:
+fi
 
+#Exit message
 echo  "${GREEN_BOLD}All updates complete!${NORMAL}"
