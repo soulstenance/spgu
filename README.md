@@ -9,7 +9,7 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 
 #### Version history
 
-**1.0** - TBA  
+**1.0** - Mar 17, 2024  
 - Added more colors and polish
 - Various other tweaks and improvements
 - Fixed issue #3
