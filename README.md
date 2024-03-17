@@ -16,7 +16,7 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 - Removed redundant "echo" lines
 - You can now answer questions with a full "yes" or "no"
 - Relevant commit(s)
-	- 7d67755, a69b179, ca7ff53
+	- e1396f5, 7d67755, a69b179, ca7ff53
 
 **0.1.1** - Feb 28, 2024  
 - Added an error code when entering invalid input
