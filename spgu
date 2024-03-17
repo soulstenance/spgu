@@ -1,25 +1,25 @@
 #!/bin/bash
-echo "Welcome to Soul's Pretty Good Updater v1.0-indev for Debian based systems."
+echo "Welcome to Soul's Pretty Good Updater v1.0 for Debian based systems."
 echo "This software is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk."
 echo ""
 
-#VARIABLES
-#Modules
-#Set these to "false" to disable the relevant module
+# VARIABLES
+# Modules
+# Set these to "false" to disable the relevant module
 	APTMOD="true"
 	FLATMOD="true"
-#Colors
+# Colors
 	GREEN=`echo -en "\e[0;32m"`
 	GREEN_BOLD=`echo -en "\e[1;32m"`
 	RED=`echo -en "\e[31m"`
 	BLUE=`echo -en "\e[0;34m"`
 	BLUE_BOLD=`echo -en "\e[1;34m"`
 	NORMAL=`echo -en "\e[0m"`
-#Stable
-	ISSTABLE="false"
+# Stable
+	ISSTABLE="true"
 
-#INDEV
-#This section warns the user they are using a development version of the application. Use the ISSTABLE variable above to control this.
+# INDEV
+# This section warns the user they are using a development version of the application. Use the ISSTABLE variable above to control this.
 if [ "$ISSTABLE" == "true" ]
 then
 	:
@@ -38,7 +38,7 @@ else
 	esac
 fi
 
-#MODULE CHECKS
+# MODULE CHECKS
 if [ "$APTMOD" == "true" ]
 then
 	echo "Base module is ${GREEN}ACTIVE${NORMAL}"
@@ -54,20 +54,20 @@ fi
 echo "No custom modules found."
 echo ""
 
-#PROMPT
-#Apt update
+# PROMPT
+# Apt update
 if [ "$APTMOD" == "true" ]
 then
 	read -p "${BLUE_BOLD}Would you like to update apt now Y/n? ${NORMAL}" ANSWER0
 	case "$ANSWER0" in
-		"" | [yY])
-			echo "${BLUE_BOLD}Updating apt packages...${NORMAL}"
+		"" | [yY] | yes)
 			sudo apt update && sudo apt upgrade -y
-			echo "${BLUE_BOLD}Checking for unneeded dependencies...${NORMAL}"
+			echo "${BLUE_BOLD}Checking for unneeded apt dependencies...${NORMAL}"
 			sudo apt autoremove -y
 			echo "${GREEN_BOLD}Apt update complete!${NORMAL}"
+			echo ""
 			;;
-		[nN])
+		[nN] | no)
 			echo "Skipping this step..."
 			;;
 		*)
@@ -79,19 +79,18 @@ else
 	:
 fi
 
-#Flatpak update
+# Flatpak update
 if [ "$FLATMOD" == "true" ]
 then
 	read -p "${BLUE_BOLD}Would you like to update flatpak now Y/n? ${NORMAL}" ANSWER1
 	case "$ANSWER1" in
-		"" | [yY])
-			echo "${BLUE_BOLD}Updating flatpak packages...${NORMAL}"
+		"" | [yY] | yes)
 			flatpak update -y
-			echo "${BLUE_BOLD}Checking for unneeded dependencies...${NORMAL}"
+			echo "${BLUE_BOLD}Checking for unneeded flatpak dependencies...${NORMAL}"
 			flatpak uninstall --unused -y
 			echo "${GREEN_BOLD}Flatpak update complete!${NORMAL}"
 			;;
-		[nN])
+		[nN] | no)
 			echo "Skipping this step..."
 			;;
 		*)
@@ -103,5 +102,6 @@ else
 	:
 fi
 
-#Exit message
-echo  "${GREEN_BOLD}All updates complete!${NORMAL}"
+# Exit message
+echo "${BLUE_BOLD}--------------------${NORMAL}"
+echo "${GREEN_BOLD}All updates complete!${NORMAL}"

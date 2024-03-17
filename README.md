@@ -13,6 +13,10 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 - Added more colors and polish
 - Various other tweaks and improvements
 - Fixed issue #3
+- Removed redundant "echo" lines
+- You can now answer questions with a full "yes" or "no"
+- Relevant commit(s)
+	- 7d67755, a69b179, ca7ff53
 
 **0.1.1** - Feb 28, 2024  
 - Added an error code when entering invalid input
@@ -36,13 +40,13 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 	- https://github.com/soulstenance/spgu/commit/d4d41989c5410786421e20244af86f65e4e2c9f1
 
 **0.0.2 Alpha** - No release  
-- Imported from proof of concept build for Arch based systems  
-- General code rework and tweaks  
-- Added basic apt and flatpak functionality  
+- Imported from proof of concept build for Arch based systems
+- General code rework and tweaks
+- Added basic apt and flatpak functionality
 - Relevant commit(s)
 	- https://github.com/soulstenance/spgu/commit/2a75b901c367cf69da73e4565d6e523ede90ac56
 
 **0.0.1 Pre-alpha** - No release  
-- Proof of concept  
-- Arch based  
-- No relevant commits  
+- Proof of concept
+- Arch based
+- No relevant commits
