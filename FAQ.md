@@ -26,7 +26,7 @@ It's not.
 Because of the silent nature of this application, it always assumes yes using the -y argument. While this is convenient, in the rare case that you need to manually intervene when running apt, it is highly recommended that you simply use apt directly. Alternatively, you can edit the program yourself and remove '-y' from each line entry where it is found.
 
 #### Will you add support for x feature or package manager?
-Maybe. However, since I made this specifically for my needs, I will only be likely to add it if I would benefit from it. Currently I consider it mostly feature complete. You are weclome to open feature requests, however, if you want a feature that I haven't, or won't add, feel free to fork it on Github!
+Maybe. However, since I made this specifically for my needs, I will only be likely to add it if I would benefit from it. Currently I consider it mostly feature complete. You are welcome to open feature requests, however, if you want a feature that I haven't, or won't add, feel free to fork it on Github!
 
 #### Will you support x distro?
 Probably not, unless I use said distro as my daily driver and feel it would be beneficial for me. See question above.
