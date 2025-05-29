@@ -31,20 +31,20 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 - Added variable to easily enable/disable warning when using an indev version
 - Various code tweaks and cleanup
 - Relevant commit(s)
-	- 4ea2eaf
+	- https://github.com/soulstenance/spgu/commit/2f905366b5e95cf8ab7b3a3d07d0537454ea2eaf
 
 **0.0.3 Alpha** - Jan 10, 2024  
 - Added syntax to ask the user to confirm they wish to run an indev version of the software
 - Added "Alpha" to the in app welcome screen
 - Relevant commit(s)
-	- 4e2c9f1
+	- https://github.com/soulstenance/spgu/commit/d4d41989c5410786421e20244af86f65e4e2c9f1
 
 **0.0.2 Alpha** - No release  
 - Imported from proof of concept build for Arch based systems
 - General code rework and tweaks
 - Added basic apt and flatpak functionality
 - Relevant commit(s)
-	- e90ac56
+	- https://github.com/soulstenance/spgu/commit/2a75b901c367cf69da73e4565d6e523ede90ac56
 
 **0.0.1 Pre-alpha** - No release  
 - Proof of concept
