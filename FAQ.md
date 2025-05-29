@@ -26,7 +26,7 @@ It's not.
 Because of the silent nature of this application, it always assumes yes using the -y argument. While this is convenient, in the rare case that you need to manually intervene when running apt, it is highly recommended that you simply use apt directly. Alternatively, you can edit the program yourself and remove '-y' from each line entry where it is found.
 
 #### Will you add support for x feature or package manager?
-Maybe. However, since I made this specifically for my needs, I will only be likely to add it if I would benefit from it. Currently I consider it mostly feature complete. You are welcome to open feature requests, however, if you want a feature that I haven't, or won't add, feel free to fork it on Github!
+Maybe. However, since I made this specifically for my needs, I will only be likely to add it if I would benefit from it. Currently I consider it mostly feature complete. You are welcome to open feature requests, however, if you want a feature that I haven't, or won't add, feel free to fork it!
 
 #### Will you support x distro?
 Probably not, unless I use said distro as my daily driver and feel it would be beneficial for me. See question above.
@@ -38,4 +38,4 @@ Absolutely not.
 Absolutely! Simply create a pull request for your code and I will review it. Please be verbose with your coding and leave clear comments in the code. If I don't know what your code does, it will be rejected. You can also submit feature requests and issue reports if you don't want to contribute code yourself!
 
 #### I have other questions.
-You can open an issue on Github with the title "Question" or send me an email, which is available on my profile to signed in users.
+You can open an issue on Codeberg or Github (preferably Codeberg) with the title "Question" or send me an email, which is available on my profile to signed in users.
