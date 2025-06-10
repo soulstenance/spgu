@@ -11,6 +11,8 @@ This software is licensed under GPL v3 and is provided as-is with no guarantee o
 
 **1.0.1** - Jun 10, 2025   
 - Fixed issue with lines not properly wrapping at welcome screen
+- Relevant commit(s)
+	- 73ce92e
 
 **1.0** - Mar 17, 2024  
 - Added more colors and polish
