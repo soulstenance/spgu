@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This software is licensed under GPL v3 and is provided as-is with no guarantee of suitability for a particular purpose. Use at your own risk. This is a module of the spgu script.
+
 # Colors
 	GREEN_BOLD=`echo -en "\e[1;32m"`
 	RED=`echo -en "\e[31m"`
