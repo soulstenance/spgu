@@ -102,6 +102,11 @@ else
 	:
 fi
 
+# Additional modules
+# Uncomment below items to activate one or add your own
+#./distrobox-upd
+
+
 # Exit message
 echo "${BLUE_BOLD}--------------------${NORMAL}"
 echo "${GREEN_BOLD}All updates complete!${NORMAL}"
