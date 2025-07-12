@@ -15,7 +15,6 @@ case "$ANSWER0" in
 	"" | [yY] | yes)
 		distrobox enter tumbleweed-latest -- sudo zypper dup
 		echo "${GREEN_BOLD}Distrobox update complete!${NORMAL}"
-		echo ""
 		;;
 	[nN] | no)
 		echo "Skipping this step..."

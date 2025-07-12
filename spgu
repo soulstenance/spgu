@@ -103,8 +103,9 @@ else
 fi
 
 # Additional modules
-# Uncomment below items to activate one or add your own
-#./distrobox-upd
+# Uncomment below item(s) to activate or add your own
+#./distrobox-upd # For portable install
+#distrobox-upd # For full install
 
 
 # Exit message
