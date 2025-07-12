@@ -51,7 +51,7 @@ then
 else
 	echo "Flatpak module is ${RED}INACTIVE${NORMAL}"
 fi
-echo "No custom modules found."
+echo "Custom distrobox module is ${RED}INACTIVE${NORMAL}"
 echo ""
 
 # PROMPT
