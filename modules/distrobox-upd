@@ -10,6 +10,7 @@
 
 # PROMPT
 # Distrobox update
+echo ""
 read -p "${BLUE_BOLD}Would you like to update the distrobox \"tumbleweed-latest\" now Y/n? ${NORMAL}" ANSWER0
 case "$ANSWER0" in
 	"" | [yY] | yes)
